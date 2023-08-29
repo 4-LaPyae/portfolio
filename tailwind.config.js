@@ -8,6 +8,7 @@ export default {
       },
     },
     colors: {
+      dark: "#0a0908",
       danger: "#FF0000",
       warning: "#FFFF00",
       success: "#008000	",

@@ -1,4 +1,4 @@
-import HomeBannerImage from "../../assets/images/anime.jpeg";
+import HomeBannerImage from "../../assets/images/jisoo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
@@ -54,11 +54,11 @@ const Home = () => {
       <section class="md:mb-32 bg-neutral-50 text-center md:text-left">
         <div class="px-6 py-5 md:px-12">
           <div class="flex grid items-center md:gap-12 md:grid-cols-2">
-            <div class="md:mt-12">
+            <div class="mt-4 md:mt-12">
               <span class=" text-2xl font-bebas">HELLO,I'm</span>
               <h1 class="mb-12 text-5xl font-bebas font-bold leading-tight tracking-tight">
                 La Pyae <br />
-                <span class="text-primary font-bebas">Web Developer</span>
+                <span class="text-cprimary font-bebas">Web Developer</span>
               </h1>
               <p class="text-neutral-600 dark:text-neutral-200">
                 I studied at Computer University of Monywa.I have good
