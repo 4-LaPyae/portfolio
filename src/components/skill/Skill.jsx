@@ -155,7 +155,7 @@ const Skill = () => {
           <div className="w-full  grid gap-6 grid-cols-3 ">
             {skills.map((s) => (
               <button
-                className={`flex w-full justify-center ${
+                className={`flex w-full justify-center  md:justify-start items-center ${
                   s.link == imgInCircle ? "opacity-30" : ""
                 }    py-3 px-2 md:px-4 text-md font-bold hover:opacity-50`}
                 href="#"
