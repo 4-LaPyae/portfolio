@@ -54,11 +54,11 @@ const About = () => {
         <div class="flex flex-wrap">
           <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-5/12">
             <div class="flex md:py-12">
-              <img
+              {/* <img
                 src={HomeBannerImage}
                 class="z-[10] w-full rounded-lg shadow-lg dark:shadow-black/20 md:ml-[50px]"
                 alt="image"
-              />
+              /> */}
             </div>
           </div>
 

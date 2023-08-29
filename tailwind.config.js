@@ -19,6 +19,7 @@ export default {
       cprimary: "#edf2f4",
       cushadow: "#25a18e",
       blue: "#3a86ff",
+      gold: "#FFD700",
     },
   },
   variants: {},
