@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* for navbar button */
+.navbar-btn {
+  @apply py-3 px-5 text-center transition duration-500;
+}
+.navbar-btn-hover:hover {
+  @apply bg-cu text-white;
+}
+
+/* for mobile button */
+.mobile-btn {
+  @apply w-full flex justify-center  text-white items-center ease-in duration-300;
+}
+.mobile-btn-hover:hover {
+  @apply bg-white text-cu;
+}
+
+.container2 {
+  @apply lg:mx-24 md:mx-8 mx-3 py-5;
+}
