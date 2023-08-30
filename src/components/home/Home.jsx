@@ -56,7 +56,7 @@ const Home = () => {
           <div class="flex grid items-center md:gap-12 md:grid-cols-2">
             <div class="mt-4 md:mt-12">
               <span class=" text-2xl font-bebas">HELLO,I'm</span>
-              <h1 class="mb-12 text-5xl font-bebas font-bold leading-tight tracking-tight">
+              <h1 class="md-3 md:mb-12 text-5xl font-bebas font-bold leading-tight tracking-tight">
                 La Pyae <br />
                 <span class="text-cprimary font-bebas">Web Developer</span>
               </h1>
