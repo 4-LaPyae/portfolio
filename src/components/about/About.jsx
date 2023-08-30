@@ -62,8 +62,8 @@ const About = () => {
             </div>
           </div>
 
-          <div class="w-full bg-dark shrink-0 grow-0 basis-auto md:w-7/12">
-            <div class="flex h-full items-center rounded-lg bg-yellow-600 p-6 text-center text-white lg:pl-12 lg:text-left">
+          <div class="w-full  shrink-0 grow-0 basis-auto md:w-7/12">
+            <div class="flex h-full items-center rounded-lg bg-yellow-600 p-6 text-center text-dark lg:pl-12 lg:text-left">
               <div class="md:pl-12">
                 <h2 class="mb-8 text-3xl font-bold">Let it surprise you</h2>
                 <p class="mb-8 pb-2 md:pb-0">

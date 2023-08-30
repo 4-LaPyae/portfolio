@@ -6,6 +6,7 @@ import About from "./components/about/About";
 import Skill from "./components/skill/Skill";
 import Footer from "./components/footer/Footer";
 import CircleProgressBar from "./components/circle-progress-bar/CircleProgressBar";
+import Project from "./components/project/Project";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
       <Home />
       <About />
       <Skill />
+      <Project />
       <CircleProgressBar />
       <Footer />
     </div>
