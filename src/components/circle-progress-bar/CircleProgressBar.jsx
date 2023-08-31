@@ -79,7 +79,7 @@ const CircleProgressBar = () => {
   return (
     <div
       className={`${
-        percent == 0 && "hidden"
+        (percent <= 0 || percent > 100) && "hidden"
       } fixed inline-flex items-center justify-center overflow-hidden rounded-full bottom-3`}
     >
       <svg className="w-20 h-20">

@@ -1,12 +1,19 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function ProjectDetail({ item }) {
   const [showModal, setShowModal] = useState(false);
+  useEffect(() => {
+    if (showModal) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [showModal]);
   return (
     <>
       <div className="flex items-center justify-center">
         <button
-          className="py-3 bg-cushadow hover:bg-cu px-6 pb-2  text-xs font-medium uppercase leading-normal text-white "
+          className="py-3 bg-cushadow hover:bg-cu px-6 pb-2 text-xs font-medium uppercase leading-normal text-white"
           type="button"
           onClick={() => setShowModal(true)}
         >
@@ -35,7 +42,7 @@ export default function ProjectDetail({ item }) {
                         </div>
                         <div class="w-full shrink-0 grow-0 basis-auto md:w-8/12">
                           <div class="px-6 py-12 md:px-12">
-                            <h2 class="mb-6 pb-2 text-4xl font-bold">
+                            <h2 class="mb-6 pb-2 text-3xl font-bold">
                               Project Details
                             </h2>
                             <h2 class="mb-6 pb-2 text-2xl font-bold">
@@ -52,10 +59,15 @@ export default function ProjectDetail({ item }) {
                     </div>
                     <div className="items-center gap-2 mt-3 sm:flex">
                       <button
-                        className="w-full mt-2 p-2.5 flex-1 text-cu hover:bg-cu hover:text-white rounded-md outline-none border ring-offset-2 ring-indigo-600 focus:ring-2"
-                        onClick={() => setShowModal(false)}
+                        className={`w-full text-center cursor-pointer mt-2 p-2.5 flex-1 text-cu hover:bg-cu hover:text-white rounded-md outline-none border ${
+                          item?.link === "#"
+                            ? "pointer-events-none opacity-25"
+                            : ""
+                        }`}
                       >
-                        View
+                        <a href={item?.link} target="_blank" rel="website">
+                          View Website
+                        </a>
                       </button>
                       <button
                         className="w-full mt-2 p-2.5 flex-1 text-cu hover:bg-cu hover:text-white rounded-md outline-none border ring-offset-2 ring-indigo-600 focus:ring-2"

@@ -10,18 +10,22 @@ const projects = [
   {
     title: "Telemedicine",
     path: telemedicineImage,
+    link: "https://admin.telemed.sabahna.com",
   },
   {
     title: "Calculator",
     path: calculatorImage,
+    link: "#",
   },
   {
     title: "Traffic Light",
     path: trafficelightImage,
+    link: "#",
   },
   {
     title: "Coin Toss",
     path: cointossImage,
+    link: "#",
   },
 ];
 
@@ -31,21 +35,17 @@ const Project = () => {
       className="mx-auto px-6 md:px-12 mt-20 bg-cprimary py-10"
       id="projects"
     >
-      <h2 class="mb-6 md:mb-12 text-center text-3xl font-bebas font-bold">
+      <h2 className="mb-6 md:mb-12 text-center text-3xl font-bebas font-bold">
         PPRJECTS:
       </h2>
-      <div class="grid gap-6 md:grid-cols-2  lg:grid-cols-3">
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((p) => (
-          <div
-            class=" block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700"
-            data-te-ripple-init
-            data-te-ripple-color="light"
-          >
-            <div class="">
-              <img src={p.path} className="w-full h-96" />
+          <div className="block bg-white rounded-xl hover:shadow-cu hover:shadow-md">
+            <div className="p-3">
+              <img src={p.path} className="w-full h-96 rounded-2xl" />
             </div>
-            <div class="p-6">
-              <h5 class="text-lg font-bold text-center">{p.title}</h5>
+            <div className="p-2">
+              <h5 className="text-lg font-bold text-center">{p.title}</h5>
               <ProjectDetail item={p} />
             </div>
           </div>
