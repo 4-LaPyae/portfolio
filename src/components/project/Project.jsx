@@ -63,7 +63,7 @@ const Project = () => {
         <div className="flex items-center justify-center">
           <button
             onClick={projectHandler}
-            class="inline-flex items-center w-full px-5 py-3 mb-3 mr-1 text-base font-semibold text-white no-underline align-middle bg-cushadow border border-transparent border-solid rounded-md cursor-pointer select-none sm:mb-0 sm:w-auto hover:bg-cu hover:text-white"
+            class="flex justify-center items-center text-center w-full px-5 py-3 mb-3 mr-1 text-base font-semibold text-white no-underline align-middle bg-cushadow border border-transparent border-solid rounded-md cursor-pointer select-none sm:mb-0 sm:w-auto hover:bg-cu hover:text-white"
           >
             See All
             <svg
