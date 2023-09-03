@@ -20,6 +20,7 @@ export default {
       cushadow: "#25a18e",
       blue: "#3a86ff",
       gold: "#FFD700",
+      img: "#00a6fb",
     },
   },
   variants: {},

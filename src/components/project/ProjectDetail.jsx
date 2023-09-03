@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
 export default function ProjectDetail({ item }) {
   const [showModal, setShowModal] = useState(false);
   useEffect(() => {
@@ -27,10 +28,16 @@ export default function ProjectDetail({ item }) {
               className="fixed inset-0 w-full h-full bg-dark opacity-40"
               onClick={() => setShowModal(false)}
             ></div>
-            <div className="flex items-center min-h-screen px-4 py-8">
-              <div className="relative w-full max-w-6xl	 p-4 mx-auto bg-white rounded-md shadow-lg">
-                <div className="mt-3 flex">
-                  <div className=" text-center md:text-left">
+            <div className="flex items-center min-h-screen ">
+              <div className="relative w-full max-w-6xl mx-auto p-4 bg-white rounded-md shadow-lg">
+                <div className="flex">
+                  <div
+                    className="absolute top-0 right-0 px-1"
+                    onClick={() => setShowModal(false)}
+                  >
+                    <FontAwesomeIcon icon={faXmark} size="2xl" />
+                  </div>
+                  <div className=" text-center md:text-left mt-5 w-full">
                     <div class="block rounded-lg ">
                       <div class="flex flex-wrap">
                         <div class="block w-full shrink-0 grow-0 basis-auto md:flex md:w-4/12">
@@ -48,11 +55,7 @@ export default function ProjectDetail({ item }) {
                             <h2 class="mb-6 pb-2 text-2xl font-bold">
                               {item?.title}
                             </h2>
-                            <p class="mb-6 pb-2 text-neutral-500 dark:text-neutral-300">
-                              Lorem ipsum dolor sit amet, consectetur
-                              adipisicing elit. A soluta corporis voluptate ab
-                              error quam dolores doloremque, quae consectetur.
-                            </p>
+                            <p class="mb-6 pb-2 text-neutral-500 dark:text-neutral-300"></p>
                           </div>
                         </div>
                       </div>
