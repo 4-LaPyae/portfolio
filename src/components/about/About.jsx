@@ -17,9 +17,9 @@ const About = () => {
                   La Pyae
                 </span>
                 .I was born on June 29,2000 in Khun Taung Gyi village,Shwe
-                Bo,Saging Region ot U Thar Htoo and Daw Myint Thi. I have a
+                Bo,Saging Region to U Thar Htoo and Daw Myint Thi. I have a
                 total of six family members,my brother is Tha Gyan Ko Ko, my
-                sister are Nwe Zin Htun and Thi Mar Htun.
+                sisters are Nwe Zin Htun and Thi Mar Htun.
               </p>
 
               <p className="pb-2 text-lg md:text-xl md:leading-loose">
