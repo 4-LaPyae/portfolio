@@ -46,13 +46,16 @@ const Project = () => {
       id="projects"
     >
       <h2 className="mb-6 md:mb-12 text-center text-3xl font-bebas font-bold">
-        PPRJECTS:
+        PROJECTS:
       </h2>
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((p) => (
           <div className="block py-2 bg-white rounded-xl hover:shadow-cu hover:shadow-md">
             <div className="p-3">
-              <img src={p.path} className="w-full h-60  md:h-96 rounded-2xl" />
+              <img
+                src={p.path}
+                className="w-full h-60 object-scale-down  md:h-96 rounded-2xl"
+              />
             </div>
             <div className="px-2">
               <h5 className="text-lg font-bold text-center">{p.title}</h5>

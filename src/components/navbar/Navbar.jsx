@@ -17,7 +17,7 @@ const Navbar = () => {
     setOpen((pre) => !pre);
   };
   return (
-    <div className="md:w-auto py-5 px-5 flex flex-col justify-between">
+    <div className="md:w-auto py-5 px-5  flex flex-col justify-between">
       <div className="flex justify-between items-center">
         <div>
           <h2 className="text-2xl font-bebas font-bold leading-tight tracking-tight ">
