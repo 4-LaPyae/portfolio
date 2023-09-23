@@ -5,6 +5,7 @@ const MobileButton = ({ open, setOpen, links }) => {
     e.preventDefault();
     setOpen(false);
   };
+  console.log(open);
   return (
     <div
       className={`w-full h-auto bg-white py-3 absolute left-0 transition-all duration-500 ease-in ${

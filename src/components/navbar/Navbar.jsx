@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import MobileButton from "./MobileButton";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 let Links = [
   { id: 1, name: "HOME", link: "home", offset: -90 },
@@ -12,10 +12,21 @@ let Links = [
   { id: 5, name: "CONTACT", link: "contact" },
 ];
 const Navbar = () => {
-  let [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false);
+  //scr=screen
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const btnHandler = () => {
     setOpen((pre) => !pre);
   };
+  useEffect(() => {
+    const handleWindowResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+    window.addEventListener("resize", handleWindowResize);
+    if (windowWidth >= 768) {
+      setOpen(false);
+    }
+  }, [windowWidth]);
   return (
     <div className="md:w-auto py-5 px-5  flex flex-col justify-between">
       <div className="flex justify-between items-center">

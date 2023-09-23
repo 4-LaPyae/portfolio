@@ -1,4 +1,4 @@
-import HomeBannerImage from "../../assets/images/lapyae3.jpeg";
+import HomeBannerImage from "../../assets/images/lapyaecover.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
