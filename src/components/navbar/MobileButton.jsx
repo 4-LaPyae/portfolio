@@ -14,7 +14,7 @@ const MobileButton = ({ open, setOpen, links }) => {
       {links.map((link) => (
         <div
           key={link.id}
-          className="w-full flex justify-center py-3 font-bebas  font-bold leading-tight tracking-tight hover:text-primary items-center ease-in duration-300"
+          className="w-full cursor-pointer flex justify-center text-cu py-3 font-bebas  font-bold leading-tight tracking-tight hover:text-primary items-center ease-in duration-300"
         >
           <Link
             activeClass="active"

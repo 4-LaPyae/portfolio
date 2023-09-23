@@ -30,7 +30,7 @@ export default function ProjectDetail({ item }) {
             ></div>
             <div className="flex items-center min-h-screen ">
               <div className="relative w-full max-w-6xl mx-auto p-4 bg-white rounded-md shadow-lg">
-                <div className="flex">
+                <div className="flex ">
                   <div
                     className="absolute top-0 right-0 px-1"
                     onClick={() => setShowModal(false)}
@@ -38,24 +38,24 @@ export default function ProjectDetail({ item }) {
                     <FontAwesomeIcon icon={faXmark} size="2xl" />
                   </div>
                   <div className=" text-center md:text-left mt-5 w-full">
-                    <div class="block rounded-lg ">
-                      <div class="flex flex-wrap">
-                        <div class="block w-full shrink-0 grow-0 basis-auto md:flex md:w-4/12">
+                    <div className="block rounded-lg ">
+                      <div className="flex flex-wrap">
+                        <div className="block w-full shrink-0 grow-0 basis-auto md:flex md:w-4/12">
                           <img
                             src={item?.path}
                             alt="Trendy Pants and Shoes"
-                            class="w-full rounded-t-lg md:rounded-tr-none md:rounded-bl-lg"
+                            className="w-full rounded-t-lg md:rounded-tr-none md:rounded-bl-lg"
                           />
                         </div>
-                        <div class="w-full shrink-0 grow-0 basis-auto md:w-8/12">
-                          <div class="px-6 py-12 md:px-12">
-                            <h2 class="mb-6 pb-2 text-3xl font-bold">
+                        <div className="w-full shrink-0 grow-0 basis-auto md:w-8/12">
+                          <div className="px-6 py-12 md:px-12">
+                            <h2 className="mb-6 pb-2 text-3xl font-bold">
                               Project Details
                             </h2>
-                            <h2 class="mb-6 pb-2 text-2xl font-bold">
+                            <h2 className="mb-6 pb-2 text-2xl font-bold">
                               {item?.title}
                             </h2>
-                            <p class="mb-6 pb-2 text-neutral-500 dark:text-neutral-300"></p>
+                            <p className="mb-6 pb-2 text-neutral-500 dark:text-neutral-300"></p>
                           </div>
                         </div>
                       </div>

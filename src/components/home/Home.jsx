@@ -5,13 +5,13 @@ import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 const Home = () => {
   return (
-    <div className="mx-auto px-6 md:px-12  bg-cprimary py-3 md:py-10">
+    <div className="mx-auto px-6 md:px-12 py-3 md:py-10">
       <section className="mb-10 md:mb-16 bg-neutral-50 text-center md:text-left">
         <div className=" py-5 md:px-12">
           <div className="flex grid items-center md:gap-12 md:grid-cols-2">
             <div className="md:mt-12">
-              <span className=" text-xl font-bebas text-cu">HELLO,I'm</span>
-              <h1 className="md-3 md:mb-6 text-4xl md:text-5xl text-cu font-bebas font-bold leading-tight tracking-tight">
+              <span className=" text-xl font-bebas text-white">HELLO ,I'm</span>
+              <h1 className="md-3 md:mb-6 text-4xl md:text-5xl text-white font-bebas font-bold leading-tight tracking-tight">
                 La Pyae <br />
                 <span className="text-primary font-bebas">Web Developer</span>
               </h1>
